@@ -42,7 +42,7 @@ Il est conçu pour automatiser ces tâches en fonction des jours de la semaine, 
     sudo cp power_schedule.timer /etc/systemd/system/
     ```
 
-4. Rechargez systemd et démarrez le timer :
+4. Rechargez systemd et démarrez le scipt power-schedule et le timer :
 
     ```bash
     sudo systemctl daemon-reload
