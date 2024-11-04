@@ -25,7 +25,7 @@ Il est conçu pour automatiser ces tâches en fonction des jours de la semaine, 
 1. Clonez le dépôt sur votre machine locale :
 
     ```bash
-    git clone https://github.com/votre_nom_dutilisateur/power_schedule.git
+    git clone https://github.com/codewithmpia/power_schedule.git
     cd power_schedule
     ```
 
