@@ -46,7 +46,9 @@ Il est conçu pour automatiser ces tâches en fonction des jours de la semaine, 
 
     ```bash
     sudo systemctl daemon-reload
+    sudo systemctl enable power_schedule.service
     sudo systemctl enable power_schedule.timer
+    sudo systemctl start power_schedule.service
     sudo systemctl start power_schedule.timer
     ```
 
@@ -73,7 +75,7 @@ WEDNESDAY_WAKEUP_TIME = "18:00"
 
 Une fois le timer activé, le script s'exécutera automatiquement tous les jours à une heure fixe pour programmer les arrêts et réveils :
 
-- Les logs d'événements seront sauvegardés dans le fichier spécifié (`/home/mp/.mes_scripts/shutdown_and_wakeup.log` par défaut).
+- Les logs d'événements seront sauvegardés dans le fichier spécifié (`/path_to_save_log_files/shutdown_and_wakeup.log` par défaut).
 - Le script ne fera rien le dimanche et reprendra son fonctionnement normalement le lundi.
 
 ## Fichiers
@@ -100,4 +102,4 @@ Les contributions sont les bienvenues. N'hésitez pas à créer une *issue* ou u
 
 ## Licence
 
-Ce projet est sous licence MIT. Consultez le fichier `LICENSE` pour plus de détails.
+Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus de détails.
