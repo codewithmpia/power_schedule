@@ -1,0 +1,13 @@
+[Unit]
+Description=Power Schedule Service
+After=network.target
+
+[Service]
+ExecStart=path_to_the_script_file/power_schedule.py
+WorkingDirectory=/home/mp/.mes_scripts/
+StandardOutput=append:path_to_save_log_files/power_schedule.log
+StandardError=append:path_to_save_log_files/power_schedule.log
+Restart=on-failure
+User=root
+
+WantedBy=multi-user.target
