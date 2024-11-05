@@ -2,7 +2,7 @@
 
 **Power Schedule Script**
 
-Est un programme Python permettant de programmer l'arrêt et le réveil automatique d'un système à des heures spécifiques.
+Est un programme Python permettant de programmer l'arrêt et le réveil automatique d'un système Linux à des heures spécifiques.
 Il est conçu pour automatiser ces tâches en fonction des jours de la semaine, avec des configurations spéciales pour le mercredi et le dimanche.
 
 ## Fonctionnalités
